@@ -1,0 +1,61 @@
+@import "base";
+
+
+.slide {
+  background: $teal;
+
+  &.brown {
+    background: $brown;
+    color: $teal;
+  }
+
+  &.blue {
+    background: $blue;
+    color: $teal;
+  }
+
+  height: calc(100vh - 120px);
+  width: 100%;
+  padding: 60px 0;
+}
+
+.change-button {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+  background-image: url("/static/img/pause.svg");
+  background-size: 65% 65%;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0px 0px 10px #000;
+  border: none;
+  &.pressed {
+    background-position: 61% 50%;
+    background-image: url("/static/img/play.svg");
+  }
+  &:hover {
+    box-shadow: 0px 0px 12px #000;
+  }
+  &:active {
+    box-shadow: 0px 0px 10px #000;
+  }
+}
+
+.slide-number {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  font-size: 2rem;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px #000;
+}

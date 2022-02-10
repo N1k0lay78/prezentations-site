@@ -1,0 +1,40 @@
+$blue: rgb(0, 36, 71);
+$light_blue: rgb(121, 197, 231);
+$teal: rgb(255, 250, 247);
+$light_brown: rgb(242, 220, 197);
+$brown: rgb(188, 103, 44);
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button:focus-visible {
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: $teal;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100vh;
+  font-size: 1.4rem;
+  &.presentation {
+    overflow-y: hidden;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: auto;
+}

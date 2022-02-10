@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <link rel="stylesheet" href="/static/css/style.min.css">
+{% endblock %}
+
+{% block main %}
+    <button onclick="change_mode()" id="change-mode" class="change-button"></button>
+    <div class="slide-number">
+        <span id="current-slide">1</span>
+    </div>
+    <div class="slide blue">
+        <div class="container">
+            <p>asdasdasd</p>
+        </div>
+    </div>
+    <div class="slide">
+        <div class="container">
+            <p>asdasdasd</p>
+        </div>
+    </div>
+
+    <div class="slide brown">
+        <div class="container">
+            <p>asdasdasd</p>
+        </div>
+    </div>
+    <script src="/static/js/slides.min.js"></script>
+{% endblock %}

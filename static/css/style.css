@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fffaf7;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100vh;
+}
+
