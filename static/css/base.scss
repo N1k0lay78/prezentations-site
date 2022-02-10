@@ -31,6 +31,9 @@ body {
   &.presentation {
     overflow-y: hidden;
   }
+  &::-webkit-scrollbar {
+    width: 0;
+  }
 }
 
 .container {
