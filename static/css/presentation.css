@@ -38,9 +38,16 @@ body::-webkit-scrollbar {
 
 .slide {
   background: #fffaf7;
+  font-family: "Open Sans", sans-serif;
   height: calc(100vh - 120px);
   width: 100%;
   padding: 60px 0;
+}
+.slide a {
+  padding: 10px 0;
+}
+.slide a:hover {
+  opacity: 0.8;
 }
 .slide.brown {
   background: #bc672c;
@@ -48,7 +55,88 @@ body::-webkit-scrollbar {
 }
 .slide.blue {
   background: #002447;
+}
+.slide.blue * {
   color: #fffaf7;
+}
+.slide .container {
+  height: 100%;
+  position: relative;
+}
+.slide__header {
+  font-family: "Oswald", sans-serif;
+  width: 100%;
+  padding-top: 30vh;
+  font-size: 8rem;
+  text-align: center;
+}
+.slide__author {
+  margin-top: auto;
+  font-size: 1.5rem;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+}
+.slide__title {
+  font-size: 3rem;
+  font-family: "Oswald", sans-serif;
+  width: 100%;
+}
+.slide__row {
+  width: 100%;
+  display: flex;
+  padding-top: 30px;
+}
+.slide__title + .slide__row {
+  padding-top: 100px;
+}
+.slide__column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+}
+.slide__title + .slide__column {
+  padding-top: 100px;
+}
+.slide__img-block {
+  flex: 0 0 35%;
+  height: 100%;
+}
+.slide__text {
+  font-weight: 500;
+}
+.slide__col-3 {
+  flex: 1 1 calc(25% - 30px);
+  padding: 0 15px;
+  max-width: calc(25% - 30px);
+}
+
+.img-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.img-block__img {
+  width: 100%;
+  max-height: calc(100% - 40px);
+}
+.slide__col-3 .img-block__img {
+  height: 300px;
+  object-fit: contain;
+}
+.img-block__text {
+  font-weight: 500;
+  font-size: 2rem;
+  text-align: center;
+  width: 100%;
+}
+.slide__col-3 .img-block__text {
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-align: left;
 }
 
 .change-button {
@@ -90,6 +178,24 @@ body::-webkit-scrollbar {
   justify-content: center;
   align-items: center;
   box-shadow: 0px 0px 10px #000;
+}
+
+.slide__col-3.img-block {
+  justify-content: left;
+}
+
+.abs_left_bottom {
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+}
+
+.selfi {
+  height: 40vh;
+}
+
+.selfi + .selfi {
+  margin-left: 50px;
 }
 
 /*# sourceMappingURL=presentation.css.map */

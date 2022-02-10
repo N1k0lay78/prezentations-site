@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
 
 {% block head %}
-    <link rel="stylesheet" href="/static/css/style.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/presentation.min.css">
 {% endblock %}
 
 {% block main %}
@@ -11,18 +12,71 @@
     </div>
     <div class="slide blue">
         <div class="container">
-            <p>asdasdasd</p>
+            <h1 class="slide__header">Индий</h1>
+            <p class="slide__author">Торопов Николай</p>
         </div>
     </div>
     <div class="slide">
         <div class="container">
-            <p>asdasdasd</p>
+            <h2 class="slide__title">Об элементе</h2>
+            <div class="slide__row">
+                <p class="slide__text">Индий был обнаружен Фердинандом Рейхом (Ferdinand Reich) и Теодором Рихтером (Theodore Richter) в 1863 году при спектроскопическом исследовании цинковой обманки.</p>
+                <div class="slide__img-block img-block">
+                    <img src="/static/img/indij.png" alt="Индий" class="img-block__img">
+                    <p class="img-block__text">Метал индий</p>
+                </div>
+            </div>
+            <div class="abs_left_bottom">
+                <img src="/static/img/Reich_Ferdinand.jpg" alt="Reich_Ferdinand" class="selfi">
+                <img src="/static/img/teod_right.jpg" alt="teod_right" class="selfi">
+            </div>
         </div>
     </div>
-
     <div class="slide brown">
         <div class="container">
-            <p>asdasdasd</p>
+            <h2 class="slide__title">Получение</h2>
+            <div class="slide__row">
+                <p class="slide__text">
+                    Получают из отходов и промежуточных продуктов производства цинка, свинца и олова. Это сырьё содержит от 0,001 % до 0,1 % индия. Из исходного сырья производят концентрат индия, из концентрата — черновой металл, который затем рафинируют. Исходное сырьё обрабатывают серной кислотой и переводят индий в раствор, из которого гидролитическим осаждением выделяют концентрат. Из концентрата черновой металл извлекают цементацией на цинке и алюминии. Для рафинирования используются различные методы, например зонная плавка.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="slide">
+        <div class="container">
+            <h2 class="slide__title">Применение</h2>
+            <div class="slide__row">
+                <div class="slide__col-3 img-block">
+                    <img src="/static/img/electronics.jpg" alt="микро электроника" class="img-block__img">
+                    <p class="img-block__text">Используется в микроэлектронике как акцепторная примесь к германию и кремнию.</p>
+                </div>
+                <div class="slide__col-3 img-block">
+                    <img src="/static/img/shika.jpg" alt=":ЖК дисплей" class="img-block__img">
+                    <p class="img-block__text">Применяется в производстве стекла для жидкокристаллических экранов.</p>
+                </div>
+                <div class="slide__col-3 img-block">
+                    <img src="/static/img/photo.jpg" alt="фотоэлемент" class="img-block__img">
+                    <p class="img-block__text">Материал для фотоэлементов.</p>
+                </div>
+                <div class="slide__col-3 img-block">
+                    <img src="/static/img/arsenid.jpg" alt="арсенид индия" class="img-block__img">
+                    <p class="img-block__text">Арсенид индия применяется как высокотемпературный материал с очень высокой эффективностью.</p>
+                </div>
+            </div>
+            <div class="slide__row">
+                <p class="slide__text">Так же существуют и другие применения этого материала.</p>
+            </div>
+        </div>
+    </div>
+    <div class="slide blue">
+        <div class="container">
+            <h2 class="slide__title">Спасибо за внимание</h2>
+            <div class="slide__column">
+                <p class="slide__text">Ссылки:</p>
+                <a href="https://science.fandom.com/ru/wiki/%D0%98%D0%BD%D0%B4%D0%B8%D0%B9" class="slide__link">Оригинальная статья</a>
+                <a href="http://www.webelements.com/webelements/elements/text/In/key.html" class="slide__link">Индий на Webelements</a>
+                <a href="http://n-t.org/ri/ps/pb049.htm" class="slide__link">Индий в Популярной библиотеке химических элементов</a>
+            </div>
         </div>
     </div>
     <script src="/static/js/slides.min.js"></script>

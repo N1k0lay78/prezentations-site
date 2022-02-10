@@ -4,12 +4,12 @@ app = Flask(__name__)
 
 
 @app.route('/stronci/')
-def hello_world():  # put application's code here
+def stronci():  # put application's code here
     return render_template('stronci.html')
 
 
 @app.route('/indi/')
-def hello_world():  # put application's code here
+def indi():  # put application's code here
     return render_template('indi.html')
 
 
