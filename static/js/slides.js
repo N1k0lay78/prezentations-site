@@ -46,10 +46,10 @@ function onWheel(e) {
             deltaScroll = 0;
         }
         deltaScroll += event.deltaY * 0.01;
-        if (deltaScroll > 3) {
+        if (deltaScroll > 3  && current_slide < last_slide) {
             deltaScroll = 0;
             current_slide += 1;
-        } else if (deltaScroll < -3) {
+        } else if (deltaScroll < -3  && current_slide > 1) {
             deltaScroll = 0;
             current_slide -= 1;
         }
